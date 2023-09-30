@@ -33,24 +33,27 @@ const App = () => {
     }, 2000);
   };
   return (
-    <section className="w-full bg-slate-600 h-[100vh] flex justify-center items-center flex-col">
+    <section className="w-full overflow-hidden bg-slate-600 min-h-screen flex justify-center items-center flex-col font-poppins">
       <h2 className="absolute rounded-lg top-1 h-6 text-white text-center w-10 bg-red-400">
         {counter}
       </h2>
       <h2 className="absolute rounded-lg  left-1 h-6 text-white text-center w-10 bg-red-400">
         {counter}
-      </h2>{" "}
+      </h2>
       <h2 className="absolute rounded-lg  right-1 h-6 text-white text-center w-10 bg-red-400">
         {counter}
       </h2>
       <h2 className="absolute rounded-lg  bottom-1 h-6 text-white text-center w-10 bg-red-400">
         {counter}
       </h2>
-      <div className="flex items-center justify-center flex-col bg-white h-64 w-60 rounded-lg shadow-lime-300 shadow-2xl sm:">
-        <h1 className="font-bold font-mono text-3xl mb-2 bg-cyan-200 rounded-xl p-2 text-emerald-500">
+
+      <div className="flex items-center justify-center flex-col flex-wrap text-center bg-white h-64 w-full max-w-md rounded-lg shadow-lime-300 shadow-2xl ">
+        <h1 className="font-bold text-center font-poppins text-3xl mb-2 bg-cyan-200 rounded-xl w-14 p-2 text-emerald-500">
           {counter}
         </h1>
-        <h1 className="font-bold font-mono text-2xl">Count My Age</h1>
+        <h1 className="font-bold font-poppins text-2xl text-center px-2">
+          Count My Age
+        </h1>
         <button
           onClick={ageUp}
           className="py-2 px-16 rounded-lg bg-yellow-300 text-slate-700 font-bold active:bg-yellow-500 mt-5 border-none"
@@ -65,7 +68,7 @@ const App = () => {
         </button>
       </div>
       <div
-        className="mt-5 w-96 h-20 p-5 text-2xl bg-slate-400 flex justify-center items-center font-sans font-bold rounded-xl border-dashed border-blue-500 border-2
+        className="w-full max-w-md h-20 py-4 px-3 text-lg text-center mt-10 bg-slate-300 flex justify-center items-center font-bold rounded-xl border-dashed border-blue-500 border-2
       "
       >
         <h1>{message}</h1>
